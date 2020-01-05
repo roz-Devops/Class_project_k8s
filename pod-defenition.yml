@@ -1,0 +1,13 @@
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: myapp-pod
+      labels:
+        name: intapi
+        type: FrontEnd-python
+    spec:
+      containers:
+        - name: intapi
+          image: rozdockerforever/dev:intapi_1.0.0
+          ports:
+            - containerPort: 80

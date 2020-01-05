@@ -1,0 +1,14 @@
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: intweb-pod
+      labels:
+        name: intweb
+        type: Backend-nodejs
+    spec:
+      containers:
+        - name: intweb
+          image: rozdockerforever/dev:intweb_{{version}}
+          ports:
+            - containerPort: 5000
+
